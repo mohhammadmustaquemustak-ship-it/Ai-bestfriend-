@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Bestie AI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div id="nameModal" class="modal">
+        <div class="modal-content">
+            <h2>Welcome!</h2>
+            <p>What should I call you?</p>
+            <input type="text" id="userNameInput" placeholder="Enter your name..." autocomplete="off">
+            <button id="saveNameBtn">Let's Chat</button>
+        </div>
+    </div>
+
+    <div id="historySidebar" class="sidebar">
+        <div class="sidebar-header">
+            <h3>Chat Options</h3>
+            <button id="closeSidebar"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="sidebar-content">
+            <button id="clearHistoryBtn" class="danger-btn"><i class="fa-solid fa-trash"></i> Clear Chat History</button>
+        </div>
+    </div>
+
+    <div class="app-container">
+        <header class="top-bar">
+            <h1>YOUR BESTIE</h1>
+            <button id="menuBtn" class="icon-btn" style="color: #8ce85c;"><i class="fa-solid fa-star fa-lg"></i></button>
+        </header>
+
+        <div class="ai-info-bar">
+            <div class="ai-profile">
+                <div class="ai-avatar">
+                    <span>AI</span>
+                    <div class="status-dot"></div>
+                </div>
+                <div class="ai-details">
+                    <h2>Bestie.AI</h2>
+                    <p>chatting with <span id="displayUserName">User</span></p>
+                </div>
+            </div>
+            <button id="moodBtn" class="mood-btn">Savage 🔥</button>
+        </div>
+
+        <main id="chatBox">
+            <div id="emptyState" class="empty-state">
+                <div class="wave-icon">👋</div>
+                <p>Say hi to your Bestie!</p>
+            </div>
+            </main>
+
+        <footer class="input-area">
+            <button class="icon-btn"><i class="fa-regular fa-face-smile"></i></button>
+            <input type="text" id="messageInput" placeholder="Type a message bro..." autocomplete="off">
+            <button id="sendBtn" class="send-btn"><i class="fa-regular fa-paper-plane"></i></button>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
