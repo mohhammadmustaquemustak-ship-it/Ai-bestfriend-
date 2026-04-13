@@ -1,5 +1,6 @@
 // --- CONFIGURATION ---
-const API_KEY = "AIzaSyCc4FqmTTE2MjLz7tID16Km2eQPY3Omhpk"; // Yahan apni API key daalo
+const API_KEY = "AIzaSyCc4FqmTTE2MjLz7tID16Km2eQPY3Omhpk";
+
 
 // DOM Elements
 const chatBox = document.getElementById('chatBox');
